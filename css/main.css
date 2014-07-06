@@ -127,6 +127,17 @@ body {
   color: rgba(255,255,255,.5);
 }
 
+/*
+ * Buttons
+ */
+
+.btn-asana {
+  background: url("/img/asana-oauth-button-blue.png");
+  height: 29px;
+  width: 159px;
+  border: 0;
+}
+
 
 /*
  * Affix and center
