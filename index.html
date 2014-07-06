@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>What to do?</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,20 +26,19 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
+              <h3 class="masthead-brand">whatodo</h3>
               <ul class="nav masthead-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="http://twitter.com/labudis" target="_blank">Contact</a></li>
               </ul>
             </div>
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <h1 class="cover-heading">See what you need to do today</h1>
+            <p class="lead">Connect with Asana and see what you need to do today across all your workspaces.</p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+              <button href="#" class="btn-asana"></button>
             </p>
           </div>
 
@@ -59,21 +58,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Parse script and initialisation --> 
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
     <script type="text/javascript">
       Parse.initialize("bv22wJPWQLodPrnxIiQbUkcCItHZyAKHJZk0RJQF", "NqLwjMj4r2YxHjaIZRNAP386P636PlZrmn5EkjB2");
-         
-      var Keys = Parse.Object.extend("Keys");
-      var keys = new Parse.Query(Keys);
-
-      $.ajax({
-        url: "http://api.songkick.com/api/3.0/search/locations.json?query=Edinburgh&apikey=nCp0T5SvEox9P9B0",
-        dataType: 'json',
-        success: function (data) {
-             mydata = data;
-             console.log(mydata);
-         }
-       });
     </script>
   </body>
 </html>
